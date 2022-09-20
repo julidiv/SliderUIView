@@ -18,7 +18,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA3-z4-hxm">
                                 <rect key="frame" x="16" y="412" width="11" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -30,6 +30,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LYo-ZX-D7h">
                                 <rect key="frame" x="39" y="408" width="287" height="29"/>
+                                <connections>
+                                    <action selector="changeAlhpaSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="nEN-cS-dtq"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,6 +50,9 @@
                             <constraint firstItem="LYo-ZX-D7h" firstAttribute="leading" secondItem="nA3-z4-hxm" secondAttribute="trailing" constant="14" id="zCe-6o-qFC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="LYo-ZX-D7h" id="e7C-71-wek"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
