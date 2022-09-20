@@ -2,20 +2,33 @@
 //  ContentView.swift
 //  SliderUIView
 //
-//  Created by Alexander Golub on 20.09.22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+
+var targetValue = 0
+    var currentValue = 0
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Подвиньте слайдер как можно ближе к: \(targetValue) ")
+                .padding()
+            
+            Button(action:
+                    { computeScore()})
+            { Text("Проверь меня")}
+                .padding()
+            Button("Начать заново") {
+                
+            }
         }
-        .padding()
+        
+        
+    }
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(Double(currentValue)))
+        return 100 - difference
     }
 }
 
