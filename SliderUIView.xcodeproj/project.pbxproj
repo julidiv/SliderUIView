@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA10C1A28DA438900960D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA10C1728DA438900960D24 /* Main.storyboard */; };
+		2FA10C1B28DA438900960D24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA10C1928DA438900960D24 /* ViewController.swift */; };
+		2FA10C1D28DA43C400960D24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA10C1C28DA43C400960D24 /* ViewController.swift */; };
 		2FF16D9328D9DE33001DA751 /* SliderUIViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF16D9228D9DE33001DA751 /* SliderUIViewApp.swift */; };
 		2FF16D9528D9DE33001DA751 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF16D9428D9DE33001DA751 /* ContentView.swift */; };
 		2FF16D9728D9DE34001DA751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF16D9628D9DE34001DA751 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FA10C1828DA438900960D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SliderUIKitHW/SliderUIKitHW/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		2FA10C1928DA438900960D24 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SliderUIKitHW/SliderUIKitHW/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		2FA10C1C28DA43C400960D24 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SliderUIKitHW/SliderUIKitHW/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		2FF16D8F28D9DE33001DA751 /* SliderUIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderUIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF16D9228D9DE33001DA751 /* SliderUIViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUIViewApp.swift; sourceTree = "<group>"; };
 		2FF16D9428D9DE33001DA751 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			children = (
 				2FF16D9228D9DE33001DA751 /* SliderUIViewApp.swift */,
 				2FF16D9428D9DE33001DA751 /* ContentView.swift */,
+				2FA10C1C28DA43C400960D24 /* ViewController.swift */,
+				2FA10C1728DA438900960D24 /* Main.storyboard */,
+				2FA10C1928DA438900960D24 /* ViewController.swift */,
 				2FF16D9628D9DE34001DA751 /* Assets.xcassets */,
 				2FF16D9828D9DE34001DA751 /* Preview Content */,
 			);
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA10C1A28DA438900960D24 /* Main.storyboard in Resources */,
 				2FF16D9A28D9DE34001DA751 /* Preview Assets.xcassets in Resources */,
 				2FF16D9728D9DE34001DA751 /* Assets.xcassets in Resources */,
 			);
@@ -137,12 +147,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA10C1B28DA438900960D24 /* ViewController.swift in Sources */,
 				2FF16D9528D9DE33001DA751 /* ContentView.swift in Sources */,
+				2FA10C1D28DA43C400960D24 /* ViewController.swift in Sources */,
 				2FF16D9328D9DE33001DA751 /* SliderUIViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FA10C1728DA438900960D24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA10C1828DA438900960D24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2FF16D9B28D9DE34001DA751 /* Debug */ = {

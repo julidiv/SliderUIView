@@ -4,8 +4,7 @@
 //
  
 
-import UIKit
-
+import SwiftUI
 class ViewController: UIViewController {
     @IBOutlet var slider: UISlider!
     
@@ -22,4 +21,20 @@ class ViewController: UIViewController {
     }
     
 }
+struct ViewControllerRepresentation: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "ViewController")
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
 
+    }
+    
+ 
+}
+struct ViewController_Previews: PreviewProvider{
+    static var previews: some View {
+        ViewControllerRepresentation()
+    }
+}
